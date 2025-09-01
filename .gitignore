@@ -1,0 +1,33 @@
+# ============================ 
+# PHP / CodeIgniter (CI4)
+# ============================
+inventory-system/vendor/                 # Composer dependencies
+inventory-system/writable/cache/*
+inventory-system/writable/logs/*
+inventory-system/writable/session/*
+inventory-system/writable/uploads/*      # Uploaded product images/files 
+inventory-system/.phpunit.result.cache
+
+# ============================
+# Python / FastAPI
+# ============================
+ML_Project/venv/        # Python virtual environment
+ML_Project/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ============================
+# OS / Editor files
+# ============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# ============================
+# Node (in case you used npm/yarn for frontend)
+# ============================
+node_modules/
