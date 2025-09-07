@@ -196,20 +196,26 @@ The following features are **implemented in Python** but **not yet fully integra
 
 ### Excel Analysis via FastAPI
 
-![Excel Analysis](inventory-system/screenshots/analyze_excel.jpg)  
+![Excel Analysis](inventory-system/screenshots/analyze_excel.jpg) 
+![Excel Analysis](inventory-system/screenshots/analyze_excel_1.jpg) 
 *FastAPI returning total products, average price, and low-stock count from an uploaded Excel file.*
 
 ### Validate Excel via FastAPI
 
 ![Excel Validating](inventory-system/screenshots/Validate_Excel.jpg) 
+![Excel Validating](inventory-system/screenshots/validate_excel_1.jpg) 
 
 ### Stock Graph via FastAPI
 
+![Stock Graph](inventory-system/screenshots/analyze_excel_graph-1.jpg)
 ![Stock Graph](inventory-system/screenshots/Stock_Graph.png)
+
 
 ### Image Classification via FastAPI
 
 ![classify Image](inventory-system/screenshots/classify_image.jpg)
+
+![classify Image](inventory-system/screenshots/classify_image_1.jpg)
 
 ![Sample Test Image](inventory-system/screenshots/classify_image_test_1.jpg)
 
