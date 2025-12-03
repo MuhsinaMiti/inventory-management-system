@@ -169,55 +169,55 @@ The following features are **implemented in Python** but **not yet fully integra
 
 ### Product Management
 
-![Product Page For Admin](inventory-system/screenshots/Product_Page_Admin_login.jpg)
+Product Page For Admin ![Product Page For Admin](inventory-system/screenshots/Product_Page_Admin_login.jpg)
 
-![Product Page For Viewers](inventory-system/screenshots/Product_Page_Viewer_login.jpg)
+Product Page For Viewers ![Product Page For Viewers](inventory-system/screenshots/Product_Page_Viewer_login.jpg)
 
 ### Adding Delivery
 
-![Adding Delivery](inventory-system/screenshots/add_delivery.jpg)
+Adding Delivery ![Adding Delivery](inventory-system/screenshots/add_delivery.jpg)
 
 ### Adding a Product
 
-![Add new product](inventory-system/screenshots/Add_new_product.jpg)
+Add new product ![Add new product](inventory-system/screenshots/Add_new_product.jpg)
 
 ### Category Dropdown
 
-![Category Dropdown](inventory-system/screenshots/categories.png)
+Category Dropdown ![Category Dropdown](inventory-system/screenshots/categories.png)
 
 ### Category Detection by image
 
-![Before Detecting Blank Category](inventory-system/screenshots/without_selecting_Category.png)
+Before Detecting Blank Category ![Before Detecting Blank Category](inventory-system/screenshots/without_selecting_Category.png)
 
-![After Detecting](inventory-system/screenshots/Category_detected_from_Image.png)
+After Detecting ![After Detecting](inventory-system/screenshots/Category_detected_from_Image.png)
 
-![Sample Image](inventory-system/screenshots/classify_image_test_2.png)
+Sample Image ![Sample Image](inventory-system/screenshots/classify_image_test_2.png)
 
 
 ### Excel Analysis via FastAPI
 
-![Excel Analysis](inventory-system/screenshots/analyze_excel.jpg) 
-![Excel Analysis](inventory-system/screenshots/analyze_excel_1.jpg) 
+Excel Analysis![Excel Analysis](inventory-system/screenshots/analyze_excel.jpg) 
+Excel Analysis![Excel Analysis](inventory-system/screenshots/analyze_excel_1.jpg) 
 *FastAPI returning total products, average price, and low-stock count from an uploaded Excel file.*
 
 ### Validate Excel via FastAPI
 
-![Excel Validating](inventory-system/screenshots/Validate_Excel.jpg) 
-![Excel Validating](inventory-system/screenshots/validate_excel_1.jpg) 
+Excel Validating ![Excel Validating](inventory-system/screenshots/Validate_Excel.jpg) 
+Excel Validating ![Excel Validating](inventory-system/screenshots/validate_excel_1.jpg) 
 
 ### Stock Graph via FastAPI
 
-![Stock Graph](inventory-system/screenshots/analyze_excel_graph-1.jpg)
-![Stock Graph](inventory-system/screenshots/Stock_Graph.png)
+Stock Graph![Stock Graph](inventory-system/screenshots/analyze_excel_graph-1.jpg)
+Stock Graph![Stock Graph](inventory-system/screenshots/Stock_Graph.png)
 
 
 ### Image Classification via FastAPI
 
-![classify Image](inventory-system/screenshots/classify_image.jpg)
+classify Image![classify Image](inventory-system/screenshots/classify_image.jpg)
 
-![classify Image](inventory-system/screenshots/classify_image_1.jpg)
+classify Image![classify Image](inventory-system/screenshots/classify_image_1.jpg)
 
-![Sample Test Image](inventory-system/screenshots/classify_image_test_1.jpg)
+Sample Test Image ![Sample Test Image](inventory-system/screenshots/classify_image_test_1.jpg)
 
 
 ---
