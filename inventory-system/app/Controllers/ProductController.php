@@ -77,7 +77,7 @@ class ProductController extends BaseController
             $imageName = $image->getRandomName();
             $image->move(ROOTPATH . 'public/uploads', $imageName);
 
-            // ✅ Send image to FastAPI
+            //  Send image to FastAPI
             $fastApiUrl = "http://127.0.0.1:8000/classify-image/";
             $filePath   = ROOTPATH . 'public/uploads/' . $imageName;
 
@@ -118,7 +118,7 @@ class ProductController extends BaseController
         $productModel = new \App\Models\ProductModel();
         $productModel->save([
             'name'     => $this->request->getPost('name'),
-            'category' => $predictedCategory, // ✅ Auto-filled category
+            'category' => $predictedCategory, // Auto-filled category
             'price'    => $this->request->getPost('price'),
             'stock'    => $this->request->getPost('stock'),
             'image'    => $imageName
