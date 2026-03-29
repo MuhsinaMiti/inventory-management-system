@@ -32,7 +32,7 @@
 <body>
 
 <div class="login-card">
-    <div class="logo">📦 Inventory</div>
+    <div class="logo"> Inventory</div>
 
     <?php if (session()->getFlashdata('error')): ?>
         <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
