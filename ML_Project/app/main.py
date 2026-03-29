@@ -20,13 +20,13 @@ app.mount("/reports", StaticFiles(directory="reports"), name="reports")
 
 @app.get("/")
 def home():
-    return {"message": "Excel & AI API is running 🚀"}
+    return {"message": "Excel & AI API is running "}
 
 # ---------- Analyze Excel ----------
 @app.post("/analyze-excel/")
 async def analyze_excel(file: UploadFile = File(...)):
     try:
-        print("📂 analyze-excel got:", file.filename, "|", file.content_type)
+        print(" analyze-excel got:", file.filename, "|", file.content_type)
         # make sure we read from the beginning
         file.file.seek(0)
         df = pd.read_excel(file.file)
@@ -60,7 +60,7 @@ async def analyze_excel(file: UploadFile = File(...)):
 @app.post("/validate-excel/")
 async def validate_excel(file: UploadFile = File(...)):
     try:
-        print("📂 validate-excel got:", file.filename, "|", file.content_type)
+        print(" validate-excel got:", file.filename, "|", file.content_type)
         file.file.seek(0)
         df = pd.read_excel(file.file)
         df.columns = df.columns.str.strip().str.lower()
@@ -97,7 +97,7 @@ async def validate_excel(file: UploadFile = File(...)):
 @app.post("/analyze-excel-graph/")
 async def analyze_excel_graph(file: UploadFile = File(...)):
     try:
-        print("📂 graph got:", file.filename, "|", file.content_type)
+        print(" graph got:", file.filename, "|", file.content_type)
         file.file.seek(0)
         df = pd.read_excel(file.file)
         df.columns = [col.strip().lower() for col in df.columns]
@@ -109,7 +109,7 @@ async def analyze_excel_graph(file: UploadFile = File(...)):
         plt.figure(figsize=(10, 6))
         sns.barplot(x="name", y="stock", data=df, palette="viridis")
         plt.xticks(rotation=45, ha="right")
-        plt.title("📊 Product Stock Levels")
+        plt.title(" Product Stock Levels")
         plt.xlabel("Product"); plt.ylabel("Stock Quantity")
 
         os.makedirs("reports", exist_ok=True)
@@ -129,7 +129,7 @@ async def analyze_excel_graph(file: UploadFile = File(...)):
 
 
 
-# ✅ ImageNet classes
+# ImageNet classes
 imagenet_labels = []
 with open("imagenet_classes.txt", "r") as f:
     for line in f.readlines():
@@ -139,7 +139,7 @@ with open("imagenet_classes.txt", "r") as f:
         imagenet_labels.append(label)
 
 
-# ✅ Load ResNet model
+# Load ResNet model
 weights = ResNet18_Weights.IMAGENET1K_V1
 model = resnet18()
 model.load_state_dict(torch.load("resnet18_imagenet.pth", map_location="cpu"))
@@ -148,7 +148,7 @@ model.eval()
 transform = weights.transforms()
 
 
-# ✅ Category mapping function
+# Category mapping function
 import re
 
 def map_category(label: str) -> str:
@@ -217,7 +217,7 @@ def map_category(label: str) -> str:
 
 
 
-# 📸 Image classification endpoint
+# Image classification endpoint
 @app.post("/classify-image/")
 async def classify_image(file: UploadFile = File(...)):
     try:
@@ -247,7 +247,7 @@ async def classify_image(file: UploadFile = File(...)):
                 "confidence": round(score.item(), 4)
             })
 
-        # 📊 Create bar chart
+        # Create bar chart
         plt.figure(figsize=(8, 5))
         labels = [p["mapped_category"] for p in predictions]
         scores = [p["confidence"] for p in predictions]
