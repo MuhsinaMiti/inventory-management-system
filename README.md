@@ -32,8 +32,7 @@ This architecture demonstrates how a traditional PHP-based system can be extende
 - **Backend (Services):** Python (FastAPI, Pandas, PyTorch, TorchVision, Seaborn, Matplotlib)  
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap  
 - **Database:** MySQL  
-- **Tools:** Sublime Text, Visual Studio Code, XAMPP, Uvicorn  
-- **Version Control:** Git & GitHub  
+- **Tools:** Sublime Text, Visual Studio Code, XAMPP, Uvicorn, GitHub   
 
 ---
 
