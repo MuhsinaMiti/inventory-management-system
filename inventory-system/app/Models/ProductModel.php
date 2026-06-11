@@ -20,7 +20,7 @@ class ProductModel extends Model
     public function __construct()
 {
     parent::__construct();
-   // echo "🔥 ProductModel loaded <br>";
+   // echo " ProductModel loaded <br>";
 }
 
 }
